@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFA6A6"
+    tools:context=".AddParticipantPage">
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/add_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surveyor_edit" />
+
+    <EditText
+        android:id="@+id/surveyor_edit"
+        android:layout_width="359dp"
+        android:layout_height="54dp"
+        android:text="@string/input_surveyor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surveyor" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/input_name"
+        app:layout_constraintBottom_toTopOf="@+id/surveyor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/surveyor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surveyor: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/surveyor_edit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/name_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="304dp"
+        android:text="@string/toggle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_view"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <TextView
+        android:id="@+id/location_view"
+        android:layout_width="303dp"
+        android:layout_height="87dp"
+        android:background="#FFFFFF"
+        android:text="@string/location_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
